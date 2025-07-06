@@ -9,7 +9,7 @@ You only need train_predict.py to get started after download all .py files and r
 - run_train_predict.py - prediction of carbon dioxide boiling point
 
 # data.py
-For simplicity, there are only 6 molecules and carbon dioxide is used for prediction later. They are represented as molecular formulas, and the bond types are not specified. Because each molecule has a different number of nodes, the model cannot be trained all at once. The solution is to train each molecule separately to get individual losses, and then sum all the losses later.
+For simplicity, there are only 6 molecules, and carbon dioxide is used for prediction later. They are represented as molecular formulas, and the bond types are not specified. Because each molecule has a different number of nodes, the model cannot be trained all at once. The solution is to train each molecule separately to get individual losses, and then sum all the losses later.
 ```python
 import torch
 
