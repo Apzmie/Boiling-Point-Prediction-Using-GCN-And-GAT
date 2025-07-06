@@ -75,3 +75,18 @@ data_list = [
     (hydrogen_sulfide, hydrogen_sulfide_edge_index, boiling_point[4]),
 ]
 ```
+
+# run_train_predict.py
+Although the loss decreases sufficiently, model cannot predict the boiling point of carbon dioxide well, which is -78.46. It can be considered that increasing the dataset and representing more properties will improve the prediction.
+```python
+from train_predict import train_predict
+
+train_predict(hidden_dim=128, train_num_epochs=4000, print_interval=1000)
+```
+```text
+Epoch 1000, Loss: 13853.6348
+Epoch 2000, Loss: 430.0951
+Epoch 3000, Loss: 1.2525
+Epoch 4000, Loss: 0.1958
+tensor([359.0571])
+```
